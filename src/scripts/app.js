@@ -38,7 +38,6 @@ const setListbyId = async(num1, num2) => {
     peopleList = await fetchData();
     console.log(peopleList.peopleList);
     let shallowCopy = [...peopleList.peopleList];
-    console.log(shallowCopy.sort((a, b) => a.firstName.localeCompare(b.firstName)))
     SortList(sortCategory, shallowCopy, num1, num2)
     totalEntries.innerText = peopleList.peopleList.length;
     displayStartAmount.innerText = counter1;
