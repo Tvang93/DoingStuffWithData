@@ -1,4 +1,5 @@
-import { SortList } from "./sortList";
+import { SortList } from "./sortList.js";
+import { fetchData } from "../../DataServices/services.js";
 
 const dropdownHoverButton = document.getElementById("dropdownHoverButton");
 const displayText = document.getElementById("displayText");
@@ -37,11 +38,7 @@ let sortCategory = "id"
 let multiplier = 1
 let newAddCounter = counter2*multiplier
 
-const fetchData = async() => {
-    const promise = await fetch("../data/data.json");
-    const data = await promise.json();
-    return data
-}
+
 
 const setListbyId = async(num1, num2) => {
     listContainer.innerHTML = "";
@@ -56,13 +53,6 @@ const setListbyId = async(num1, num2) => {
     }else{
         displayEndAmount.innerText = counter2;
     }
-}
-
-const createH1 = (text) => {
-    let h1 = document.createElement("h1");
-    h1.classList = "text-center";
-    h1.innerText = text;
-    return h1;
 }
 
 display10.addEventListener('click', () => {
@@ -136,8 +126,6 @@ sortByAge.addEventListener('click', () => {
     sortCategory = "age";
     setListbyId(counter1, counter2);
 })
-
-
 
 
 console.log("reloaded")

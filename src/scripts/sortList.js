@@ -21,5 +21,12 @@ const SortList = (list, num1, num2) => {
     }
 }
 
+const createH1 = (text) => {
+    let h1 = document.createElement("h1");
+    h1.classList = "text-center";
+    h1.innerText = text;
+    return h1;
+}
+
 
 export {SortList}
