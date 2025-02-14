@@ -1,3 +1,5 @@
+import { SortList } from "./sortList";
+
 const dropdownHoverButton = document.getElementById("dropdownHoverButton");
 const displayText = document.getElementById("displayText");
 const display10 = document.getElementById("display10");
@@ -136,27 +138,7 @@ sortByAge.addEventListener('click', () => {
 })
 
 
-const SortList = (list, num1, num2) => {
-    switch(sortCategory){
-        case "id":
-            list.slice(num1-1, num2).forEach(entry => {
-                listContainer.appendChild(createH1(entry.id))
-                listContainer.appendChild(createH1(entry.firstName))
-                listContainer.appendChild(createH1(entry.lastName))
-                listContainer.appendChild(createH1(entry.height))
-                listContainer.appendChild(createH1(entry.age))
-            });
-            break;
-        case "firstName":
-            break;
-        case "lastName":
-            break;
-        case "height":
-            break;
-        default:
-            break;
-    }
-}
+
 
 console.log("reloaded")
 setListbyId(counter1, counter2*multiplier);
