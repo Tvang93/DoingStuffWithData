@@ -25,13 +25,6 @@ const nextBtn = document.getElementById("nextBtn");
 let peopleList;
 let counter1 = 1
 let counter2 = 10;
-// let sortBy = {
-//     id: true,
-//     firstName: false,
-//     LastName: false,
-//     height: false,
-//     age: false,
-// }
 
 let sortCategory = "id"
 
