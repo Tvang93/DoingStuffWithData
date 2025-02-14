@@ -518,6 +518,9 @@
   }
 }
 @layer utilities {
+  .fixed {
+    position: fixed;
+  }
   .z-10 {
     z-index: 10;
   }
