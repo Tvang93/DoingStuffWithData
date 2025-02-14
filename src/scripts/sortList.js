@@ -1,5 +1,5 @@
-const SortList = (list, num1, num2) => {
-    switch(sortCategory){
+const SortList = (category, list, num1, num2) => {
+    switch(category){
         case "id":
             list.slice(num1-1, num2).forEach(entry => {
                 listContainer.appendChild(createH1(entry.id))
